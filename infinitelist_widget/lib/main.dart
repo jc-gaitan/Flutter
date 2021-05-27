@@ -22,17 +22,41 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: new AppBar(
         title: new Text("Lista Infinita"),
         centerTitle: true,
+        actions: <Widget>[
+          new IconButton(onPressed: _pushSaved, icon: new Icon(Icons.list))
+        ],
       ),
       body: _buildSuggestions(),
     );
   }
 
-  Widget _buildRow(WordPair pair) {
-    final bool alreadySaved = false;
+  void _pushSaved() {
+    Navigator.of(context).push(
+      new MaterialPageRoute(builder: (context) {
+        final tiles = _saved.map((pair) {
+          return new ListTile(
+            title: new Text(pair.asPascalCase),
+          );
+        });
+        final divided = ListTile.divideTiles(
+          context: context,
+          tiles: tiles,
+        ).toList();
+        return new Scaffold(
+          appBar: new AppBar(
+            title: new Text("Palabras Guardadas"),
+            centerTitle: true,
+          ),
+          body: new ListView(
+            children: divided,
+          ),
+        );
+      }),
+    );
+  }
 
-    for (var item in _saved) {
-      print(item);
-    }
+  Widget _buildRow(WordPair pair) {
+    final bool alreadySaved = _saved.contains(pair);
 
     return ListTile(
       title: new Text(
@@ -42,7 +66,11 @@ class _RandomWordsState extends State<RandomWords> {
           color: Colors.redAccent),
       onTap: () {
         setState(() {
-          _saved.add(pair);
+          if (alreadySaved) {
+            _saved.remove(pair);
+          } else {
+            _saved.add(pair);
+          }
         });
       },
     );
