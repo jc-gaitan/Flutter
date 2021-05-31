@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/pages/camara.dart';
-import 'package:whatsapp_clone/pages/chats_screen.dart';
+import 'package:whatsapp_clone/pages/chats_list.dart';
 import 'package:whatsapp_clone/pages/estados_screen.dart';
 import 'package:whatsapp_clone/pages/llamadas_screen.dart';
 
@@ -42,7 +42,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       body: new TabBarView(controller: _tabController, children: <Widget>[
         new Camara(),
         new Chats(),
-        new Estados(),
+        new Estado(),
         new Llamadas(),
       ]),
     );
