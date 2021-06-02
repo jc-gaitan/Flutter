@@ -1,0 +1,2 @@
+CURSO: https://www.youtube.com/playlist?list=PLtp7ENz9bQMR9swg8mB3Pr4fqOI5RFxiU
+Github: https://github.com/GiancarloCode/bloc-pattern-example
