@@ -1,0 +1,391 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/syncfusion_flutter_charts/charts.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/painting/border_radius.dart'], (function load__packages__myflutterapp__grafico_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__syncfusion_flutter_charts__charts$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__painting__border_radius$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const ui = dart_sdk.ui;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const charts = packages__syncfusion_flutter_charts__charts$46dart.charts;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  var grafico = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    AsistenciaL: () => (T.AsistenciaL = dart.constFn(dart.legacy(grafico.Asistencia)))(),
+    JSArrayOfAsistenciaL: () => (T.JSArrayOfAsistenciaL = dart.constFn(_interceptors.JSArray$(T.AsistenciaL())))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    ColumnSeriesOfAsistenciaL$StringL: () => (T.ColumnSeriesOfAsistenciaL$StringL = dart.constFn(charts.ColumnSeries$(T.AsistenciaL(), T.StringL())))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    AsistenciaLAndintLToStringL: () => (T.AsistenciaLAndintLToStringL = dart.constFn(dart.fnType(T.StringL(), [T.AsistenciaL(), T.intL()])))(),
+    doubleL: () => (T.doubleL = dart.constFn(dart.legacy(core.double)))(),
+    AsistenciaLAndintLTodoubleL: () => (T.AsistenciaLAndintLTodoubleL = dart.constFn(dart.fnType(T.doubleL(), [T.AsistenciaL(), T.intL()])))(),
+    ColumnSeriesLOfAsistenciaL$StringL: () => (T.ColumnSeriesLOfAsistenciaL$StringL = dart.constFn(dart.legacy(T.ColumnSeriesOfAsistenciaL$StringL())))(),
+    JSArrayOfColumnSeriesLOfAsistenciaL$StringL: () => (T.JSArrayOfColumnSeriesLOfAsistenciaL$StringL = dart.constFn(_interceptors.JSArray$(T.ColumnSeriesLOfAsistenciaL$StringL())))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: charts.MajorGridLines.prototype,
+        [MajorGridLines_color]: null,
+        [MajorGridLines_width]: 0,
+        [MajorGridLines_dashArray]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: charts.AxisLine.prototype,
+        [AxisLine_dashArray]: null,
+        [AxisLine_color]: null,
+        [AxisLine_width]: 0
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: charts.MajorTickLines.prototype,
+        [MajorTickLines_color]: null,
+        [MajorTickLines_width]: 1,
+        [MajorTickLines_size]: 0
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "plotAreaBorderWidth",
+        [_Location_column]: 7,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "primaryXAxis",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "primaryYAxis",
+        [_Location_column]: 7,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "series",
+        [_Location_column]: 7,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6, C[7] || CT.C7, C[8] || CT.C8], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 12,
+        [_Location_file]: "file:///C:/Users/admin/Downloads/how-to-create-a-flutter-line-chart-in-10-minutes-main/lib/grafico.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 5,
+        [_Location_line]: 9,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 5,
+        [_Location_line]: 10,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 5,
+        [_Location_line]: 11,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 5,
+        [_Location_line]: 12,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12, C[13] || CT.C13, C[14] || CT.C14], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 8,
+        [_Location_file]: "file:///C:/Users/admin/Downloads/how-to-create-a-flutter-line-chart-in-10-minutes-main/lib/grafico.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: charts.LabelIntersectAction.prototype,
+        [_name]: "LabelIntersectAction.hide",
+        index: 0
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: charts.ConnectorType.prototype,
+        [_name]: "ConnectorType.line",
+        index: 1
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: charts.ConnectorLineSettings.prototype,
+        [ConnectorLineSettings_type]: C[18] || CT.C18,
+        [ConnectorLineSettings_color]: null,
+        [ConnectorLineSettings_width]: 1,
+        [ConnectorLineSettings_length]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: charts.ChartDataLabelPosition.prototype,
+        [_name]: "ChartDataLabelPosition.inside",
+        index: 0
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 0
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: charts.ChartDataLabelAlignment.prototype,
+        [_name]: "ChartDataLabelAlignment.outer",
+        index: 1
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 5,
+        [EdgeInsets_right]: 5,
+        [EdgeInsets_top]: 5,
+        [EdgeInsets_left]: 5
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: text_style.TextStyle.prototype,
+        [TextStyle_fontFeatures]: null,
+        [TextStyle_shadows]: null,
+        [TextStyle_debugLabel]: null,
+        [TextStyle_decorationThickness]: null,
+        [TextStyle_decorationStyle]: null,
+        [TextStyle_decorationColor]: null,
+        [TextStyle_decoration]: null,
+        [TextStyle_background]: null,
+        [TextStyle_foreground]: null,
+        [TextStyle_locale]: null,
+        [TextStyle_leadingDistribution]: null,
+        [TextStyle_height]: 1,
+        [TextStyle_textBaseline]: null,
+        [TextStyle_wordSpacing]: null,
+        [TextStyle_letterSpacing]: null,
+        [TextStyle_fontStyle]: null,
+        [TextStyle_fontWeight]: null,
+        [TextStyle_fontSize]: 8,
+        [TextStyle__package]: null,
+        [TextStyle__fontFamilyFallback]: null,
+        [TextStyle_fontFamily]: null,
+        [TextStyle_backgroundColor]: null,
+        [TextStyle_color]: null,
+        [TextStyle_inherit]: true
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: charts.ChartAlignment.prototype,
+        [_name]: "ChartAlignment.center",
+        index: 1
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: charts.DataLabelSettings.prototype,
+        [DataLabelSettings_offset]: null,
+        [DataLabelSettings_showZeroValue]: true,
+        [DataLabelSettings_showCumulativeValues]: false,
+        [DataLabelSettings_builder]: null,
+        [DataLabelSettings_labelIntersectAction]: C[16] || CT.C16,
+        [DataLabelSettings_connectorLineSettings]: C[17] || CT.C17,
+        [DataLabelSettings_labelPosition]: C[19] || CT.C19,
+        [DataLabelSettings_borderWidth]: 0,
+        [DataLabelSettings_borderColor]: C[20] || CT.C20,
+        [DataLabelSettings_angle]: 0,
+        [DataLabelSettings_isVisible]: true,
+        [DataLabelSettings_borderRadius]: 5,
+        [DataLabelSettings_labelAlignment]: C[21] || CT.C21,
+        [DataLabelSettings_useSeriesColor]: false,
+        [DataLabelSettings_opacity]: 1,
+        [DataLabelSettings_margin]: C[22] || CT.C22,
+        [DataLabelSettings_textStyle]: C[23] || CT.C23,
+        [DataLabelSettings_color]: null,
+        [DataLabelSettings_alignment]: C[24] || CT.C24
+      });
+    }
+  }, false);
+  var C = Array(25).fill(void 0);
+  var I = ["package:myflutterapp/grafico.dart"];
+  var dia$ = dart.privateName(grafico, "Asistencia.dia");
+  var minutos$ = dart.privateName(grafico, "Asistencia.minutos");
+  grafico.Asistencia = class Asistencia extends core.Object {
+    get dia() {
+      return this[dia$];
+    }
+    set dia(value) {
+      this[dia$] = value;
+    }
+    get minutos() {
+      return this[minutos$];
+    }
+    set minutos(value) {
+      this[minutos$] = value;
+    }
+  };
+  (grafico.Asistencia.new = function(dia, minutos) {
+    this[dia$] = dia;
+    this[minutos$] = minutos;
+    ;
+  }).prototype = grafico.Asistencia.prototype;
+  dart.addTypeTests(grafico.Asistencia);
+  dart.addTypeCaches(grafico.Asistencia);
+  dart.setLibraryUri(grafico.Asistencia, I[0]);
+  dart.setFieldSignature(grafico.Asistencia, () => ({
+    __proto__: dart.getFields(grafico.Asistencia.__proto__),
+    dia: dart.fieldType(dart.legacy(core.String)),
+    minutos: dart.fieldType(dart.legacy(core.double))
+  }));
+  var MajorGridLines_color = dart.privateName(charts, "MajorGridLines.color");
+  var MajorGridLines_width = dart.privateName(charts, "MajorGridLines.width");
+  var MajorGridLines_dashArray = dart.privateName(charts, "MajorGridLines.dashArray");
+  var AxisLine_dashArray = dart.privateName(charts, "AxisLine.dashArray");
+  var AxisLine_color = dart.privateName(charts, "AxisLine.color");
+  var AxisLine_width = dart.privateName(charts, "AxisLine.width");
+  var MajorTickLines_color = dart.privateName(charts, "MajorTickLines.color");
+  var MajorTickLines_width = dart.privateName(charts, "MajorTickLines.width");
+  var MajorTickLines_size = dart.privateName(charts, "MajorTickLines.size");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var DataLabelSettings_offset = dart.privateName(charts, "DataLabelSettings.offset");
+  var DataLabelSettings_showZeroValue = dart.privateName(charts, "DataLabelSettings.showZeroValue");
+  var DataLabelSettings_showCumulativeValues = dart.privateName(charts, "DataLabelSettings.showCumulativeValues");
+  var DataLabelSettings_builder = dart.privateName(charts, "DataLabelSettings.builder");
+  var _name = dart.privateName(charts, "_name");
+  var DataLabelSettings_labelIntersectAction = dart.privateName(charts, "DataLabelSettings.labelIntersectAction");
+  var ConnectorLineSettings_type = dart.privateName(charts, "ConnectorLineSettings.type");
+  var ConnectorLineSettings_color = dart.privateName(charts, "ConnectorLineSettings.color");
+  var ConnectorLineSettings_width = dart.privateName(charts, "ConnectorLineSettings.width");
+  var ConnectorLineSettings_length = dart.privateName(charts, "ConnectorLineSettings.length");
+  var DataLabelSettings_connectorLineSettings = dart.privateName(charts, "DataLabelSettings.connectorLineSettings");
+  var DataLabelSettings_labelPosition = dart.privateName(charts, "DataLabelSettings.labelPosition");
+  var DataLabelSettings_borderWidth = dart.privateName(charts, "DataLabelSettings.borderWidth");
+  var Color_value = dart.privateName(ui, "Color.value");
+  var DataLabelSettings_borderColor = dart.privateName(charts, "DataLabelSettings.borderColor");
+  var DataLabelSettings_angle = dart.privateName(charts, "DataLabelSettings.angle");
+  var DataLabelSettings_isVisible = dart.privateName(charts, "DataLabelSettings.isVisible");
+  var DataLabelSettings_borderRadius = dart.privateName(charts, "DataLabelSettings.borderRadius");
+  var DataLabelSettings_labelAlignment = dart.privateName(charts, "DataLabelSettings.labelAlignment");
+  var DataLabelSettings_useSeriesColor = dart.privateName(charts, "DataLabelSettings.useSeriesColor");
+  var DataLabelSettings_opacity = dart.privateName(charts, "DataLabelSettings.opacity");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var DataLabelSettings_margin = dart.privateName(charts, "DataLabelSettings.margin");
+  var TextStyle_fontFeatures = dart.privateName(text_style, "TextStyle.fontFeatures");
+  var TextStyle_shadows = dart.privateName(text_style, "TextStyle.shadows");
+  var TextStyle_debugLabel = dart.privateName(text_style, "TextStyle.debugLabel");
+  var TextStyle_decorationThickness = dart.privateName(text_style, "TextStyle.decorationThickness");
+  var TextStyle_decorationStyle = dart.privateName(text_style, "TextStyle.decorationStyle");
+  var TextStyle_decorationColor = dart.privateName(text_style, "TextStyle.decorationColor");
+  var TextStyle_decoration = dart.privateName(text_style, "TextStyle.decoration");
+  var TextStyle_background = dart.privateName(text_style, "TextStyle.background");
+  var TextStyle_foreground = dart.privateName(text_style, "TextStyle.foreground");
+  var TextStyle_locale = dart.privateName(text_style, "TextStyle.locale");
+  var TextStyle_leadingDistribution = dart.privateName(text_style, "TextStyle.leadingDistribution");
+  var TextStyle_height = dart.privateName(text_style, "TextStyle.height");
+  var TextStyle_textBaseline = dart.privateName(text_style, "TextStyle.textBaseline");
+  var TextStyle_wordSpacing = dart.privateName(text_style, "TextStyle.wordSpacing");
+  var TextStyle_letterSpacing = dart.privateName(text_style, "TextStyle.letterSpacing");
+  var TextStyle_fontStyle = dart.privateName(text_style, "TextStyle.fontStyle");
+  var TextStyle_fontWeight = dart.privateName(text_style, "TextStyle.fontWeight");
+  var TextStyle_fontSize = dart.privateName(text_style, "TextStyle.fontSize");
+  var TextStyle__package = dart.privateName(text_style, "TextStyle._package");
+  var TextStyle__fontFamilyFallback = dart.privateName(text_style, "TextStyle._fontFamilyFallback");
+  var TextStyle_fontFamily = dart.privateName(text_style, "TextStyle.fontFamily");
+  var TextStyle_backgroundColor = dart.privateName(text_style, "TextStyle.backgroundColor");
+  var TextStyle_color = dart.privateName(text_style, "TextStyle.color");
+  var TextStyle_inherit = dart.privateName(text_style, "TextStyle.inherit");
+  var DataLabelSettings_textStyle = dart.privateName(charts, "DataLabelSettings.textStyle");
+  var DataLabelSettings_color = dart.privateName(charts, "DataLabelSettings.color");
+  var DataLabelSettings_alignment = dart.privateName(charts, "DataLabelSettings.alignment");
+  grafico.grafico = function grafico$(screenHeight) {
+    return new container.Container.new({width: 1 / 0, height: dart.notNull(screenHeight) * 0.4, padding: new edge_insets.EdgeInsets.all(5.0), child: new charts.SfCartesianChart.new({plotAreaBorderWidth: 0.0, primaryXAxis: new charts.CategoryAxis.new({majorGridLines: C[0] || CT.C0}), primaryYAxis: new charts.NumericAxis.new({axisLine: C[1] || CT.C1, labelFormat: "{value}", majorTickLines: C[2] || CT.C2}), series: grafico._getDefaultColumnSeries(), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9});
+  };
+  grafico._getDefaultColumnSeries = function _getDefaultColumnSeries() {
+    let chartData = T.JSArrayOfAsistenciaL().of([new grafico.Asistencia.new("DOM", 20.0), new grafico.Asistencia.new("LUN", 40.0), new grafico.Asistencia.new("MAR", 50.0), new grafico.Asistencia.new("MIE", 10.0), new grafico.Asistencia.new("JUE", 5.0), new grafico.Asistencia.new("VIE", 23.0), new grafico.Asistencia.new("SAD", 8.0)]);
+    return T.JSArrayOfColumnSeriesLOfAsistenciaL$StringL().of([new (T.ColumnSeriesOfAsistenciaL$StringL()).new({dataSource: chartData, xValueMapper: dart.fn((sales, _) => sales.dia, T.AsistenciaLAndintLToStringL()), yValueMapper: dart.fn((sales, _) => sales.minutos, T.AsistenciaLAndintLTodoubleL()), dataLabelSettings: C[15] || CT.C15, borderRadius: new border_radius.BorderRadius.only({topLeft: new ui.Radius.circular(15.0), topRight: new ui.Radius.circular(15.0)})})]);
+  };
+  dart.trackLibraries("packages/myflutterapp/grafico.dart", {
+    "package:myflutterapp/grafico.dart": grafico
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["grafico.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAgES;;;;;;IACA;;;;;;;qCANA,KACA;IADA;IACA;;EAEN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;sCAxDmB;AACpB,UAAO,oDAEgB,aAAb,YAAY,IAAG,cACH,+BAAI,aACjB,sDACgB,mBAGP,4EAGA,kEAEG,oDAET;EAId;;AAIyB,oBAAwB,6BAC7C,2BAAW,OAAO,OAClB,2BAAW,OAAO,OAClB,2BAAW,OAAO,OAClB,2BAAW,OAAO,OAClB,2BAAW,OAAO,MAClB,2BAAW,OAAO,OAClB,2BAAW,OAAO;AAEpB,UAAyC,qDACvC,6DACc,SAAS,gBACP,SAAY,OAAO,MAAM,AAAM,KAAD,sDAC9B,SAAY,OAAO,MAAM,AAAM,KAAD,8FAMjB,8CACT,uBAAS,iBACR,uBAAS;EAIlC","file":"../../../../../packages/myflutterapp/grafico.dart.lib.js"}');
+  // Exports:
+  return {
+    grafico: grafico
+  };
+}));
+
+//# sourceMappingURL=grafico.dart.lib.js.map
