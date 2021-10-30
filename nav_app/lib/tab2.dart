@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nav_app/page2.dart';
 
+import 'detalle_negocio.dart';
 import 'home.dart';
+import 'lista_negocios.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,8 +19,8 @@ class HomePageState extends State<HomePage> {
   final List<Widget> _tabItems = [
     const Home(),
     const Home2(),
-    const Home(),
-    const Home2(),
+    const ListaNegocios(),
+    const detalle(),
   ];
 
   @override
