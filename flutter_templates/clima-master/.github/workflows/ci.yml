@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+      - README.md
+      - 'fastlane/**'
+  pull_request:
+    paths-ignore:
+      - README.md
+      - 'fastlane/**'
+
+jobs:
+  check-code-style-and-run-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        package:
+          - packages/clima_core
+          - packages/clima_domain
+          - packages/clima_data
+          - packages/clima_ui
+
+    env:
+      COMMAND: ${{ (endsWith(matrix.package, 'core') || endsWith(matrix.package, 'domain')) && 'dart' || 'flutter' }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v1
+        with:
+          channel: stable
+          flutter-version: '2.x'
+
+      - name: Check formatting
+        run: flutter format --set-exit-if-changed --dry-run .
+        working-directory: ${{ matrix.package }}
+
+      - name: Get packages
+        run: ${{ format('{0} pub get', env.COMMAND) }}
+        working-directory: ${{ matrix.package }}
+
+      - name: Run code generation
+        run: ${{ format('{0} pub run build_runner build', env.COMMAND) }}
+        working-directory: ${{ matrix.package }}
+        if: ${{ endsWith(matrix.package, 'data') }}
+
+      - name: Analyze source code
+        run: ${{ format('{0} analyze', env.COMMAND) }}
+        working-directory: ${{ matrix.package }}
+
+      - name: Run tests
+        run: |
+          if [ -d "test" ]; then
+            ${{ format('{0} test', env.COMMAND) }}
+          else
+            echo "test directory is empty"
+          fi
+        working-directory: ${{ matrix.package }}
