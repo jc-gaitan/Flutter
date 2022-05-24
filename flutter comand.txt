@@ -1,0 +1,7 @@
+flutter create --org com.app_delivery -a kotlin -i swift app_delivery
+		        nombre org   len android  leng ios   nombre app
+
+flutter run
+
+flutter build apk
+flutter build appbundle
