@@ -1,0 +1,42 @@
+
+
+class Vehiculo{
+  String color = "";
+  String modelo = "";
+  String marca = ""; 
+  
+  //version normal
+  /*Vehiculo(String modelo, String marca){
+    this.modelo = modelo;
+    this.marca = marca;
+  }*/
+  
+  //simplificada
+  Vehiculo(this.modelo, this.marca);
+  
+  void Arrancar(){
+    print("El vehiculo $modelo arranco");
+  }
+}
+
+class Camion extends Vehiculo{
+  
+  int x = 0;
+  
+  //constructor con herencia
+  Camion(String modelo, String marca, int x) : super(modelo, marca){
+    this.x = x;
+  }
+  
+  void verCaminon(){
+    print("$modelo $marca $x");
+  }
+  
+}
+
+void main() {
+  
+  Camion auto = new Camion("Ford", "58", 5);
+  auto.verCaminon();
+  
+}

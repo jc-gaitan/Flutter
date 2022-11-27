@@ -1,0 +1,27 @@
+
+
+class Vehiculo{
+  String color = "";
+  String modelo = "";
+  String marca = ""; 
+  
+  //version normal
+  /*Vehiculo(String modelo, String marca){
+    this.modelo = modelo;
+    this.marca = marca;
+  }*/
+  
+  //simplificada
+  Vehiculo(this.modelo, this.marca);
+  
+  void Arrancar(){
+    print("El vehiculo $modelo arranco");
+  }
+}
+
+void main() {
+  
+  Vehiculo auto = new Vehiculo("Ford", "58");
+  auto.Arrancar();
+  
+}

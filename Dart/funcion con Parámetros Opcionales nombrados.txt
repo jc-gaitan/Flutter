@@ -1,0 +1,19 @@
+
+void main() {
+  
+  saludo("jose");
+  
+}
+
+//funcion con Parámetros Opcionales nombrados
+void saludo([String nombre = "", String apellido = ""]){
+  var saludos = new StringBuffer("Bienvenido a Dart");
+  if(nombre !=null){
+    saludos.write(" $nombre");
+  }
+  if(apellido!=null){
+    saludos.write(" $apellido");
+  }
+  
+  print(saludos.toString());
+}

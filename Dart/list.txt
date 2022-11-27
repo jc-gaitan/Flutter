@@ -1,0 +1,21 @@
+void main() {
+  var list = [1, 6, 7, 8, 32, 47];
+
+  print("Tamaño: " + list.length.toString());
+
+  for (int i = 0; i < list.length; i++) {
+    print(list[i]);
+  }
+
+  //Lista de String
+  var onlyString = new List<String>();
+  onlyString.add("Flutter");
+  onlyString.add("Dart");
+  onlyString.add("es genial");
+  
+  //for each
+  for(var x in onlyString){
+    print(x);
+  }
+  
+}

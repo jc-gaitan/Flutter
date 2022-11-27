@@ -1,0 +1,20 @@
+void main() {
+  //diccionario
+  var groups = {
+    "Perro": "Animal", 
+    "Bus": "Vehiculo"
+  };
+  
+  //acceder a valores del diccionario
+  print(groups["Bus"]);
+  
+  //imprimir todos los valores
+  groups.forEach((k, v) => print(k));
+  
+  //imprimir la keys
+  print(groups.keys);
+  
+  //imprimir los valores
+  print(groups.values);
+  
+}
