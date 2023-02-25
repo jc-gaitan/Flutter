@@ -5,3 +5,10 @@ flutter run
 
 flutter build apk
 flutter build appbundle
+//actualizar las dependencias del proyecto
+flutter pub upgrade
+flutter clean
+
+//sha1 
+cd android
+./gradlew signingReport
