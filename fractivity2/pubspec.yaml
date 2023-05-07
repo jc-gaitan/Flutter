@@ -1,0 +1,50 @@
+name: fractivity
+description: App para la enseñanza de las operaciones fraccines matematicas.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  awesome_dialog: ^3.0.2
+
+  get: ^4.6.5
+  #flutter_speed_dial: ^6.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/.
+    - assets/images/simples/.
+    - assets/images/suma/.
+    - assets/images/resta/.
+    - assets/images/multi/.
+    - assets/images/division/.
+    - assets/gifs/.
+     # Splash Screens
+    - assets/splash/icon.png
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/roboto/Roboto-Light.ttf
+        - asset: fonts/roboto/Roboto-Bold.ttf
+          weight: 700
