@@ -1,9 +1,0 @@
-include: package:lint/analysis_options.yaml
-
-linter:
-  rules:
-    # Very infuriating and unnecessary
-    sort_pub_dependencies: false
-
-    # Don't find it necessary.
-    always_use_package_imports: false

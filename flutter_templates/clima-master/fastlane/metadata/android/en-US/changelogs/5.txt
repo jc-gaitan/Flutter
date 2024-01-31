@@ -1,4 +1,0 @@
-* You can now search for a city directly from the home screen
-* Refined the loading indicator
-* Replaced weather conditions emojis with icons
-* Bug fixes and performance improvements
